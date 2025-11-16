@@ -13,7 +13,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    background-color:rgb(234, 219, 189);
+    background-color:#fae7d2;
     font-family: 'cormorant garamond';
     font-style: italic;
 }
@@ -60,9 +60,9 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 140px;
-    height: 140px;
-    background: rgb(221 201 158);
+    width: 160px;
+    height: 160px;
+    background: rgb(216, 195, 168);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
     border-radius: 50%;
     display: flex;
@@ -308,7 +308,7 @@ html, body {
 /* Texto */
 .section-blessings h1 {
     font-size: 30px;
-    color: SteelBlue;
+    color: #de86bf;
     font-family: var(--font-2);
     font-weight: 400;
     margin-bottom: 15px;
@@ -317,10 +317,10 @@ html, body {
     margin-top: 230px;
 }
 .section-blessings h2 {
-    font-size: 60px;
+    font-size: 38px;
     font-family: var(--font-1);
     font-weight: 400;
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -20px;
@@ -376,7 +376,7 @@ html, body {
     font-size: 45px;
     font-family: var(--font-1);
     font-weight: 400;
-    background: linear-gradient(135deg, #FFFFFF, #F7F7F9, #EFEFF2);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 10px 0;
@@ -443,7 +443,7 @@ html, body {
 .section-confirmacion h1, .itinerary-card h2 {
     font-size: 40px;
     font-family: var(--font-1);
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
@@ -454,7 +454,7 @@ html, body {
 /* Texto descriptivo */
 .section-confirmacion p, .itinerary-card p, .section-dresscode p, .section-gifts p, .section-playlist p, .qr-container p  {
     font-size: 22px;
-    color: SteelBlue;
+    color: #de86bf;
     font-family: var(--font-2);
     font-weight: 400;
     font-style: italic;
@@ -490,7 +490,7 @@ html, body {
   /* Fecha y hora */
   .time-location {
     font-size: 22px;
-    color: SteelBlue;
+    color: #de86bf;
     font-family: var(--font-2);
     font-weight: 400;
     margin-top: -15px;
@@ -571,7 +571,7 @@ html, body {
     font-size: 40px;
     font-family: var(--font-1);
     margin: 20px 0 10px 0;
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
@@ -620,7 +620,6 @@ html, body {
 .section-galeria {
     width: 100%;
     min-height: 100vh;
-    background: url("imagenes/GALERIA.png") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -633,14 +632,13 @@ html, body {
     font-family: var(--font-1);
     margin-bottom: 30px;
     font-weight: 400;
-    background:linear-gradient(90deg, #ffffff, #faf2ff, #ffff, #ffffff);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 100px;
 }
 /* Card de galería */
 .galeria-card {
-    background: SteelBlue3d; /* blanco translúcido */
     max-width: 700px;
     width: 90%;
     border-radius:5%;
@@ -708,7 +706,7 @@ html, body {
     font-size: 40px;
     font-family: var(--font-1);
     margin: 20px 0 10px 0;
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
@@ -719,7 +717,7 @@ html, body {
     font-size: 38px;
     font-family: var(--font-1);
     margin-bottom: 30px;
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
@@ -750,7 +748,7 @@ html, body {
     font-size: 45px;
     font-family: var(--font-1);
     margin: 20px 0;
-    background: linear-gradient(135deg, #B0D8E8, #4682B4, #2C577A);
+    background: linear-gradient(to right, #dea3c9, #de86bf, #dc67b3, #de86bf, #dea3c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 10px;
@@ -811,7 +809,7 @@ html, body {
     position: relative; /* Para posicionar .bola-disco9 */
 }
 .section-quote h1 {
-    font-size: 35px;
+    font-size: 30px;
     padding: 10px;
     font-family: var(--font-1);
     font-weight: 500;
@@ -833,7 +831,7 @@ html, body {
   }
 footer {
     padding: 20px;
-    background-color: #80afbf;
+    background-color: rgb(216, 195, 168);
     background-size: cover;
     color: #de86bf;
     font-size: var(--footer-font-size);
@@ -1046,7 +1044,7 @@ button, .btn {
     display: inline-block;
     padding: 14px 35px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #E0F7FA, #7ab8d4, #558da8);
+    background: rgb(216, 195, 168);
     color: #fff;
     letter-spacing: 0.5px;
     transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;

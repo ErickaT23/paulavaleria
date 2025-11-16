@@ -135,23 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cantidad = 40; // número de diamantes
-  for (let i = 0; i < cantidad; i++) {
-    const sparkle = document.createElement("span");
-    sparkle.classList.add("sparkle");
 
-    // Posición aleatoria en toda la pantalla
-    sparkle.style.top = Math.random() * 100 + "%";
-    sparkle.style.left = Math.random() * 100 + "%";
-
-    // Animaciones con tiempos distintos
-    sparkle.style.animationDelay = (Math.random() * 3) + "s";
-    sparkle.style.animationDuration = (2 + Math.random() * 2) + "s";
-
-    document.body.appendChild(sparkle);
-  }
-});
 
 
 

@@ -2,13 +2,13 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.3.1/firebas
 import { getDatabase, ref, push, onValue } from 'https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyALifqv1blrDE8C6Keguvl51KKx4ubYVXg",
-    authDomain: "misquince-anafatima.firebaseapp.com",
-    projectId: "misquince-anafatima",
-    storageBucket: "misquince-anafatima.firebasestorage.app",
-    messagingSenderId: "976183190833",
-    appId: "1:976183190833:web:210e25446642a139abfc10"
-  };
+  apiKey: "AIzaSyAp9W_ZvwuWSjEqbfiDY3UwehOUWdqenpc",
+  authDomain: "misxc-paulavaleria.firebaseapp.com",
+  projectId: "misxc-paulavaleria",
+  storageBucket: "misxc-paulavaleria.firebasestorage.app",
+  messagingSenderId: "778580522358",
+  appId: "1:778580522358:web:d2b5fe01909a62e0963657"
+};
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
