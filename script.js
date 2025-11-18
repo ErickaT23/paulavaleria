@@ -1,23 +1,22 @@
 // Función para abrir la invitación (sobre) y reproducir la música
 function abrirInvitacion() {
-    // Obtener el sobre y la invitación
-    const envelope = document.getElementById('envelope');
-    const invitacion = document.getElementById('invitacion');
-    
-    // Añadir clase para animar la apertura del sobre
-    envelope.classList.add('open');
+  const envelope = document.getElementById('envelope');
+  const invitacion = document.getElementById('invitacion');
+  const musica = document.getElementById('musica');
 
-    // Mostrar la invitación después de la animación
-    setTimeout(() => {
-        envelope.style.display = 'none';
-        invitacion.style.display = 'block';
-        
-        // Reproducir la música solo después de abrir el sobre
-        const musica = document.getElementById('musica');
-        if (musica) {
-            musica.play();
-        }
-    }, 1000); // Ajustar tiempo para esperar la animación de apertura del sobre
+  // ⬅️ Reproducir la música justo al hacer clic
+  if (musica) {
+      musica.play().catch(error => {
+          console.warn("El navegador bloqueó la reproducción automática:", error);
+      });
+  }
+
+  envelope.classList.add('open');
+
+  setTimeout(() => {
+      envelope.style.display = 'none';
+      invitacion.style.display = 'block';
+  }, 1000);
 }
 
 // Asignar el evento de clic al sello para abrir el sobre
