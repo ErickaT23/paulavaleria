@@ -97,7 +97,6 @@ html, body {
  }
  .portada {
     width: 100%;
-    background: url("imagenes/assets/PORTADA-1.svg") no-repeat center center/cover;
     z-index: -1;
 }
   /* Texto principal */
@@ -141,7 +140,6 @@ html, body {
     text-align: center;
     align-content: center;
     width: 100%;
-    background: url("imagenes/assets/PORTADA-1.svg") no-repeat center center/cover;
     z-index: -1;
 }
 /* Títulos y textos */
@@ -351,7 +349,6 @@ html, body {
 .section-invitados {
     position: relative;
     width: 100%;
-    background: url("imagenes/assets/PORTADA-1.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,7 +422,6 @@ html, body {
     position: relative;
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,7 +456,6 @@ html, body {
     position: relative; /* clave para posicionar hijos absolute */
     width: 100%;
     min-height: 100vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -521,7 +516,6 @@ html, body {
     position: relative; /* clave para posicionar .bola-disco5 */
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center / cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,7 +530,6 @@ html, body {
 .section-dresscode {
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -556,7 +549,6 @@ html, body {
 .section-playlist {
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -616,7 +608,6 @@ linear infinite;
 .section-album {
     width: 100%;
     min-height: 100vh;
-    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -654,7 +645,6 @@ linear infinite;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url("/imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -718,7 +708,6 @@ linear infinite;
 .section-quote {
     width: 100%;
     min-height: 40vh;
-    background: url("/imagenes/assets/PORTADA-1.svg") no-repeat center center/cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;
