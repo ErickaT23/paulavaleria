@@ -536,7 +536,7 @@ html, body {
 .section-dresscode {
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/DRESSCODE.svg") no-repeat center center/cover;
+    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -556,7 +556,7 @@ html, body {
 .section-playlist {
     width: 100%;
     min-height: 80vh;
-    background: url("imagenes/assets/PLAYLIST.svg") no-repeat center center/cover;
+    background: url("imagenes/assets/ITI.svg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
