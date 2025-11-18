@@ -27,9 +27,37 @@ document.addEventListener('DOMContentLoaded', function() {
         seal.addEventListener('click', abrirInvitacion);
     }
 
-    // Iniciar el contador y cargar los datos del invitado al cargar la página
-    iniciarContador();
-    cargarDatosInvitado();
+    function cargarDatosInvitado() {
+      // Obtener ID desde la URL
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+    
+      // Verificar que exista la lista global de invitados
+      if (!window.invitados || !Array.isArray(window.invitados)) {
+        console.error("No existe window.invitados");
+        return;
+      }
+    
+      // Buscar el invitado por ID
+      const invitado = window.invitados.find(
+        inv => String(inv.id) === String(id)
+      );
+    
+      if (!invitado) {
+        console.warn("No se encontró invitado con id:", id);
+        return;
+      }
+    
+      // Aquí puedes hacer cualquier otra acción que quieras
+      console.log("Invitado cargado:", invitado);
+    
+      // (Opcional) Mostrar su nombre en pantalla
+      const elementoNombre = document.getElementById("nombreInvitado");
+      if (elementoNombre) {
+        elementoNombre.textContent = invitado.nombre;
+      }
+    }
+    
 });
 
 
@@ -116,26 +144,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("num-pases").textContent = "Pases reservados con mucho cariño";
     }
   });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get("id"));
-    const invitado = invitados.find(inv => inv.id === id);
-  
-    const baseForm = "https://docs.google.com/forms/d/e/1FAIpQLSfSKRscViKRvMGlQg2QjwDsn4Gs1bqlwhaTObeau7QSJ-W23A/viewform?usp=pp_url";
-  
-    if (invitado) {
-      // Construir URL con valores dinámicos
-      const prefilled = `${baseForm}&entry.1297710131=${encodeURIComponent(invitado.nombre)}&entry.1099367965=${invitado.pases}`;
-      document.getElementById("link-confirmacion").setAttribute("href", prefilled);
-    } else {
-      // Si no hay ID válido, mandar al form vacío
-      document.getElementById("link-confirmacion").setAttribute("href", baseForm);
-    }
-  });
-  
-
-
-
-
 
