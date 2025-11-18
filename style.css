@@ -992,15 +992,7 @@ button, .btn {
     animation: flash 2s linear infinite;
     z-index: 2;
 }
-.bola-disco-8 {
-    position: absolute;
-    top: -125px;
-    right: -133px;
-    width: 260px;
-    z-index: 5;
-    pointer-events: none;
-    animation: flash 2s linear infinite;
-}
+
 .bola-disco-9 {
     position: absolute;
     top: -33px;
