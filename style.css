@@ -83,7 +83,6 @@ html, body {
 }
 #invitacion {
     display: none;
-    background: transparent;
     max-width: 800px;
     width: 100%;
     box-sizing: border-box;
@@ -269,6 +268,14 @@ html, body {
     width: 100%;
     max-width: 300px;
 }
+audio {
+    position: relative;
+    z-index: 10; /* asegúrate que sea mayor que los demás elementos */
+  }
+  .capa-superior {
+    pointer-events: none; /* para que no bloquee los clics */
+  }
+  
 .bloque-con-bola {
     position: relative;
   }
@@ -991,3 +998,7 @@ button, .btn {
     animation: flash 2s linear infinite;
     z-index: 2;
 }
+.overlay, .fondo-decorativo, .envoltura {
+    pointer-events: none;
+  }
+  

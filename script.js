@@ -14,10 +14,15 @@ function abrirInvitacion() {
   envelope.classList.add('open');
 
   setTimeout(() => {
-      envelope.style.display = 'none';
-      invitacion.style.display = 'block';
+    document.getElementById('envelope').style.display = 'none';
+    document.getElementById('envelope-top').style.display = 'none';
+    document.getElementById('envelope-bottom').style.display = 'none';
+    document.getElementById('invitacion').style.display = 'block';
+    document.getElementById('musica').play();
   }, 1000);
+  
 }
+
 
 // Asignar el evento de clic al sello para abrir el sobre
 document.addEventListener('DOMContentLoaded', function() {
