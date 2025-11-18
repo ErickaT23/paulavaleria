@@ -451,7 +451,8 @@ html, body {
     font-family: var(--font-2);
     font-weight: 400;
     font-style: italic;
-    margin-top: -15px;
+    margin-top: -20px;
+    margin-bottom: 4px;
     padding: 10px;
 }
 /* Sección itinerario (CLASE: lleva punto) */
@@ -963,5 +964,49 @@ button, .btn {
   @media (min-width: 1025px) {
     .btn { font-size: 20px; }
   }
-  
-  
+  /* Imagen bolas disco */
+  .bola-disco-5 {
+    position: absolute;
+    top: -5px;
+    right: -66%;
+    transform: translateX(-50%);
+    width: 224px;
+    animation: flash 2s linear infinite;
+    z-index: 2;
+}
+.bola-disco-6 {
+    position: absolute;
+    top: -31px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 172px;
+    animation: flash 2s linear infinite;
+    z-index: 2;
+}
+.bola-disco-7 {
+    position: absolute;
+    top: -31px;
+    left: 0%;
+    transform: translateX(-50%);
+    width: 172px;
+    animation: flash 2s linear infinite;
+    z-index: 2;
+}
+.bola-disco-8 {
+    position: absolute;
+    top: -125px;
+    right: -133px;
+    width: 260px;
+    z-index: 5;
+    pointer-events: none;
+    animation: flash 2s linear infinite;
+}
+.bola-disco-9 {
+    position: absolute;
+    top: -33px;
+    left: -8%;
+    transform: translateX(-50%);
+    width: 267px;
+    animation: flash 2s linear infinite;
+    z-index: 2;
+}
