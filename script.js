@@ -4,11 +4,10 @@ function abrirInvitacion() {
   const invitacion = document.getElementById('invitacion');
   const musica = document.getElementById('musica');
 
-  // ⬅️ Reproducir la música justo al hacer clic
   if (musica) {
-      musica.play().catch(error => {
-          console.warn("El navegador bloqueó la reproducción automática:", error);
-      });
+    musica.play().catch(error => {
+      console.warn("El navegador bloqueó la reproducción automática:", error);
+    });
   }
 
   envelope.classList.add('open');
@@ -19,9 +18,12 @@ function abrirInvitacion() {
     document.getElementById('envelope-bottom').style.display = 'none';
     document.getElementById('invitacion').style.display = 'block';
     document.getElementById('musica').play();
+
+    // ✅ Iniciar el contador justo después de mostrar la invitación
+    iniciarContador();
   }, 1000);
-  
 }
+
 
 
 // Asignar el evento de clic al sello para abrir el sobre
@@ -68,7 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
 // Función para iniciar el contador de la fecha del evento
 function iniciarContador() {
   const eventoFecha = new Date("2025-12-06T00:00:00").getTime();
-  const intervalo = setInterval(() => {
+  const diasElem = document.getElementById("dias");
+  const horasElem = document.getElementById("horas");
+  const minutosElem = document.getElementById("minutos");
+  const segundosElem = document.getElementById("segundos");
+
+  function actualizarContador() {
     const ahora = new Date().getTime();
     const diferencia = eventoFecha - ahora;
 
@@ -83,12 +90,16 @@ function iniciarContador() {
     const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-    document.getElementById("dias").innerText = dias;
-    document.getElementById("horas").innerText = horas;
-    document.getElementById("minutos").innerText = minutos;
-    document.getElementById("segundos").innerText = segundos;
-  }, 1000);
+    diasElem.innerText = dias;
+    horasElem.innerText = horas;
+    minutosElem.innerText = minutos;
+    segundosElem.innerText = segundos;
+  }
+
+  actualizarContador(); // Actualiza inmediatamente
+  const intervalo = setInterval(actualizarContador, 1000);
 }
+
 
 // Ejecutar cuando la página esté lista
 window.onload = iniciarContador;
@@ -110,8 +121,6 @@ function closeModal(event) {
         modal.style.display = 'none';
     }
 }
-
-
 
 //Funcion para confirmar la asistencia 
 function confirmarAsistencia() {
