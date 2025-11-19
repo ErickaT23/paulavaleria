@@ -67,23 +67,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Función para iniciar el contador de la fecha del evento
 function iniciarContador() {
-    const eventoFecha = new Date("December 06, 2025 00:00:00").getTime();
+  const eventoFecha = new Date("2025-12-06T00:00:00").getTime();
+  const intervalo = setInterval(() => {
+    const ahora = new Date().getTime();
+    const diferencia = eventoFecha - ahora;
 
-    setInterval(() => {
-        const ahora = new Date().getTime();
-        const diferencia = eventoFecha - ahora;
+    if (diferencia <= 0) {
+      clearInterval(intervalo);
+      document.getElementById("contador").innerHTML = "<p>¡Ya llegó el gran día!</p>";
+      return;
+    }
 
-        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
-        document.getElementById("dias").innerText = dias;
-        document.getElementById("horas").innerText = horas;
-        document.getElementById("minutos").innerText = minutos;
-        document.getElementById("segundos").innerText = segundos;
-    }, 1000);
+    document.getElementById("dias").innerText = dias;
+    document.getElementById("horas").innerText = horas;
+    document.getElementById("minutos").innerText = minutos;
+    document.getElementById("segundos").innerText = segundos;
+  }, 1000);
 }
+
+// Ejecutar cuando la página esté lista
+window.onload = iniciarContador;
 
 function changePhoto(element) {
     const mainPhotoModal = document.getElementById('main-photo-modal');
