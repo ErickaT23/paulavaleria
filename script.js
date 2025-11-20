@@ -149,20 +149,42 @@ function elegirAplicacionOtraDireccion() {
 
 // script-invitados.js
 document.addEventListener("DOMContentLoaded", () => {
-    // Obtener id desde la URL (ejemplo: ?id=2)
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get("id"));
-  
-    // Buscar en el archivo invitados.js
-    const invitado = invitados.find(inv => inv.id === id);
-  
-    if (invitado) {
-      document.getElementById("nombre-invitado").textContent = invitado.nombre;
-      document.getElementById("num-pases").textContent = `${invitado.pases} pase${invitado.pases > 1 ? "s" : ""} con mucho cariño`;
-    } else {
-      // Si no hay coincidencia
-      document.getElementById("nombre-invitado").textContent = "Invitado Especial";
-      document.getElementById("num-pases").textContent = "Pases reservados con mucho cariño";
-    }
-  });
+  // Obtener id desde la URL (ejemplo: ?id=2)
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get("id"));
+
+  // Buscar en el array global de invitados
+  const invitado = window.invitados.find(inv => inv.id === id);
+
+  // Si encontramos el invitado
+  if (invitado) {
+    // Mostrar nombre
+    document.getElementById("nombre-invitado").textContent = invitado.nombre;
+
+    // Mostrar número de pases
+    const textoPases = `${invitado.pases} pase${invitado.pases > 1 ? "s" : ""} con mucho cariño`;
+    document.getElementById("num-pases").textContent = textoPases;
+
+    // Ajustar textos dinámicos
+    const textoPresencia = invitado.pases > 1
+      ? "Este momento no estaría completo sin ustedes."
+      : "Este momento no estaría completo sin usted.";
+
+    const textoReserva = invitado.pases > 1
+      ? "Hemos reservado para ustedes"
+      : "Hemos reservado para usted";
+
+    // Aplicar textos al DOM
+    const parrafoPresencia = document.querySelector(".section-invitados p");
+    if (parrafoPresencia) parrafoPresencia.textContent = textoPresencia;
+
+    const parrafoReserva = document.querySelector(".pases p");
+    if (parrafoReserva) parrafoReserva.textContent = textoReserva;
+
+  } else {
+    // Si no se encontró al invitado
+    document.getElementById("nombre-invitado").textContent = "Invitado Especial";
+    document.getElementById("num-pases").textContent = "Pases reservados con mucho cariño";
+  }
+});
 
