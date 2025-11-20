@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!link) return;
   
     const baseForm =
-      "https://docs.google.com/forms/d/e/1FAIpQLSfSKRscViKRvMGlQg2QjwDsn4Gs1bqlwhaTObeau7QSJ-W23A/viewform?usp=pp_url";
+      "https://docs.google.com/forms/d/e/1FAIpQLSdrZOEtFFAGNVDW604yZcEgoslYI-Y_dlMeD82iGYHmr5PLFA/viewform?usp=pp_url&entry.1297710131=Familia+B%C3%A4tzel+Mej%C3%ADa&entry.1099367965=3";
   
     const params = new URLSearchParams(window.location.search);
     const idParam = params.get("id");
