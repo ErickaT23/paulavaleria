@@ -75,7 +75,7 @@ window.invitados = [
   { id: 73, nombre: "Álvaro Hurtarte", pases: 1 },
   { id: 74, nombre: "Pablo Cordon", pases: 1 },
   { id: 75, nombre: "Isabella Sandoval", pases: 1 },
-  { id: 76, nombre: "Santiago allí", pases: 1 },
+  { id: 76, nombre: "Santiago Alí", pases: 1 },
   { id: 77, nombre: "Dylan Marin", pases: 1 },
   { id: 78, nombre: "Rebeca Flores", pases: 1 },
   { id: 79, nombre: "Sofía Cardona", pases: 1 },
