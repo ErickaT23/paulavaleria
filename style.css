@@ -139,7 +139,7 @@ html, body {
     text-align: center;
     align-content: center;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 /* Títulos y textos */
 .section-countdown h1 {
