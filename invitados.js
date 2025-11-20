@@ -82,6 +82,8 @@ window.invitados = [
   { id: 80, nombre: "Dulce Canton", pases: 1 },
   { id: 81, nombre: "Paula Gómez", pases: 1 },
   { id: 82, nombre: "Jorge Ramírez", pases: 1 },
-  { id: 83, nombre: "Matilde Gonzalez", pases: 1 }
+  { id: 83, nombre: "Matilde Gonzalez", pases: 1 },
+  { id: 84, nombre: "Licenciada Susana Mejía", pases: 2 },
+  { id: 85, nombre: "Señora Rosa Leiva e hija", pases: 3 }
 ];
 
