@@ -555,7 +555,6 @@ audio {
 }
 .section-playlist {
     width: 100%;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -614,7 +613,6 @@ linear infinite;
 }
 .section-album {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -714,7 +712,6 @@ linear infinite;
 }
 .section-quote {
     width: 100%;
-    min-height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
