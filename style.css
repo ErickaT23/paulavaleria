@@ -999,3 +999,121 @@ button, .btn {
     pointer-events: none;
   }
   
+
+
+  @media (min-width: 1025px) {
+    .portada h1 {
+      font-size: 150px;
+      margin-top: 220px;
+    }
+    .section-countdown, .section-music{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-countdown{
+        margin-bottom: 50px;
+    }
+    .section-countdown h1 {
+      font-size: 120px;
+    }
+    .section-countdown h2 {
+      font-size: 60px;
+    }
+    .section-countdown p {
+      font-size: 60px;
+    }
+    .countdown-circle {
+      width: 180px;
+      height: 180px;
+    }
+    .countdown-circle span {
+      font-size: 42px;
+    }
+    .section-calendar a {
+      font-size: 35px;
+      padding: 12px 30px;
+    }
+    .section-music h2 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    .section-music{
+        margin-bottom: 0;
+        margin-top: -200px;
+    }
+    .section-invitados{
+        margin-top: -150px;
+    }
+    .section-invitados h1 {
+      font-size: 60px;
+    }
+    .section-invitados h2 {
+      font-size: 90px;
+    }
+    .section-invitados p {
+      font-size: 60px;
+    }
+    .itinerary-card h2, .section-confirmacion h1, .section-dresscode h2, .section-playlist h2, .section-gifts h2, .section-album h2, .section-wishes h2{
+        font-size: 80px;
+    }
+    .section-quote h1{
+        font-size: 40px;
+    }
+    .section-confirmacion p, .itinerary-card p, .section-dresscode p, .section-gifts p, .section-playlist p, .qr-container p, .time-location{
+        font-size: 40px;
+    }
+    .icon lord-icon{
+        width: 400px;
+    }
+    .btn {
+      font-size: 40px;
+    }
+    /* Ajuste de bolas disco */
+    .bolas-disco {
+        position: absolute;
+        top: -130px;
+        left: 50%;
+        width: 800px;
+    }
+    .bola-disco-1 {
+      top: -120px;
+      right: -105%;
+      width: 550px;
+    }
+    .bola-disco-2 {
+      top: 310px;
+      left: -35%;
+      width: 450px;
+    }
+    .bola-disco3 {
+      top: 0;
+      right: 85%;
+      width: 550px;
+    }
+    .bola-disco-5,
+    .bola-disco-6,
+    .bola-disco-7,
+    .bola-disco-9 {
+      width: 650px;
+    }
+    .bola-disco-5{
+        right: -125%;
+        top: -220px;
+    }
+    .bola-disco-6{
+        left: -55%;
+    }
+    .bola-disco6{
+        right: -75%;
+        width: 550px;
+        top: -70px;
+    }
+    .bola-disco-7{
+        left: -55%;
+    }
+    .bola-disco-9{
+        left: -55%;
+    }
+  }
+  
