@@ -86,6 +86,14 @@ window.invitados = [
   { id: 84, nombre: "Licenciada Susana Mejía", pases: 2 },
   { id: 85, nombre: "Señora Rosa Leiva e hija", pases: 3 },
   { id: 86, nombre: "Licenciada Marilyn Arévalo", pases: 1},
-  { id: 87, nombre: "Señora Juana María Antonio Guerra", pases: 1 }
+  { id: 87, nombre: "Señora Juana María Antonio Guerra", pases: 1 },
+  { id: 88, nombre: "Mónica Echarry y Abigail Sánchez", pases: 2 },
+  { id: 89, nombre: "Señora María Eugenia Díaz Calderón", pases: 2 },
+  { id: 90, nombre: "Señora Wendy Véliz", pases: 3 },
+  { id: 91, nombre: "Señora Miriam Ocampo", pases: 2 },
+  { id: 92, nombre: "Señora Bárbara Arriol", pases: 2 },
+  { id: 93, nombre: "Señora Lizza Dávila ", pases: 2 },
+  { id: 94, nombre: "Señor Arnulfo López y esposa", pases: 2 },
+  { id: 95, nombre: "Señora Mireya Mazariegos", pases: 2 }
 ];
 
