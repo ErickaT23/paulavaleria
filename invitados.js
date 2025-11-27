@@ -95,7 +95,7 @@ window.invitados = [
   { id: 93, nombre: "Señora Lizza Dávila ", pases: 2 },
   { id: 94, nombre: "Señor Arnulfo López y esposa", pases: 2 },
   { id: 95, nombre: "Señora Mireya Mazariegos", pases: 2 },
-  { id: 96, nombre: "Ingeniera Marcela Peláez Pérez", pases: 2 },
+  { id: 96, nombre: "Ingeniera Marcela Peláez Petz", pases: 2 },
   { id: 97, nombre: "Licenciado Jorge Guillermo Aráuz Aguilar", pases: 2 },
   { id: 98, nombre: "Ingeniera Georgina Peláez Petz", pases: 2 },
   { id: 99, nombre: "Señor Gersson Mejía y esposa" , pases: 2 },
