@@ -99,6 +99,8 @@ window.invitados = [
   { id: 97, nombre: "Licenciado Jorge Guillermo Aráuz Aguilar", pases: 2 },
   { id: 98, nombre: "Ingeniera Georgina Peláez Petz", pases: 2 },
   { id: 99, nombre: "Señor Gersson Mejía y esposa" , pases: 2 },
-  { id: 100, nombre: "Señor Luis Mejía y esposa", pases: 2 }
+  { id: 100, nombre: "Señor Luis Mejía y esposa", pases: 2 },
+  { id: 101, nombre: "Bertha Hernández", pases: 1 },
+  { id: 102, nombre: "Licenciado Jorge Mario Colindres Sandoval", pases: 2 }
 ];
 
